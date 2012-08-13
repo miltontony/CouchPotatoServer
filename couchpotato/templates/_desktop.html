@@ -34,6 +34,7 @@
 		<script type="text/javascript" src="{{ url_for('web.static', filename='scripts/page/settings.js') }}"></script>
 		<script type="text/javascript" src="{{ url_for('web.static', filename='scripts/page/about.js') }}"></script>
 		<script type="text/javascript" src="{{ url_for('web.static', filename='scripts/page/manage.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('web.static', filename='scripts/page/recent.js') }}"></script>
 		<!--<script type="text/javascript" src="{{ url_for('web.static', filename='scripts/page/soon.js') }}"></script>-->
 
 		{% for url in fireEvent('clientscript.get_scripts', as_html = True, single = True) %}
@@ -43,7 +44,7 @@
 
 		<link href="{{ url_for('web.static', filename='images/favicon.ico') }}" rel="icon" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="{{ url_for('web.static', filename='images/homescreen.png') }}" />
-		
+
 		<script type="text/javascript" src="https://www.youtube.com/player_api" defer="defer"></script>
 
 		<script type="text/javascript">
